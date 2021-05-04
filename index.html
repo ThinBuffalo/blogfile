@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
 <style>
-div{
-    width: 50px;
-    height: 100px;
+.sidebar{
+    width: 10%;
+    height: 70%;
 	background-color: black;
     border-radius: 15px;
-    opacity: 0.8;
+    opacity: 0.95;
+    position: absolute;
+    margin-top: 10px
 }
 </style>
+<style>
+    @import url(global.css);
+</style> 
 <div class="sidebar">
-    <ul class="sb">
-        <li class="a">
-            <span>
-                a
-            </span>
-        </li>
-    </ul>
+    <div class="avatar">
+        <style>
+            .ava{
+                border-radius: 50%;
+                top: 5%;
+                transform: scale(.7);
+            }
+        </style>
+        <img class="ava" src="avatar.png">
+    </div>
 </div>
 
 </html>
