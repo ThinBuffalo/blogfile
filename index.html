@@ -4,7 +4,7 @@
     .sidebar {
         width: 192px;
         height: 96%;
-        background-color: #23272A;
+        background-color: #181A1B;
         border-radius: 10px;
         opacity: 0.85;
         position: fixed;
@@ -30,7 +30,7 @@
             }
 
             .avabg {
-                height: 121px;
+                height: 140px;
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
                 background-image: url(image/avabg.png);
@@ -48,12 +48,11 @@
         <ul class="flist">
             <style>
                 .flist {
-                    right: 41px;
+                    right: 40px;
                     width: fit-content;
                     list-style: none;
                     position: relative;
                 }
-
             </style>
             <li class="node" data-bm="1">
                 <style>
@@ -82,12 +81,33 @@
                             width: 150px;
                             height: 30px;
                             border-radius: 5px;
-                            box-shadow:  rgb(102 102 102 / 5%) 0px 0px 0px 1px, rgb(102 102 102 / 10%) 0px 2px 3px 0px;
+                            box-shadow: 0.4px 0.4px 0.4px 0.4px rgba(255, 255, 255, 0.041);
                         }
                     </style>
+                    <div class="icon">
+                        <embed class="ico" src="image/clock.svg" type="image/svg+xml">
+                        <style>
+                            .icon {
+                                position: relative;
+                                top: 2.5px;
+                                width: 25px;
+                                height: 25px;
+                                border-radius: 50%;
+                                opacity: 50%;
+                                background-color: rgba(240, 248, 255, 0.185);
+                                text-align: center;
+                            }
+
+                            .ico {
+                                position: relative;
+                                top: 3.5px;
+                                right: 1.5px;
+                            }
+                        </style>
+                    </div>
                 </div>
             </li>
-            </ul>
+        </ul>
     </div>
 </div>
 
