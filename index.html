@@ -12,7 +12,7 @@
     }
 </style>
 <style>
-    @import url(global.css);
+    @import url(css/global.css);
 </style>
 <div class="sidebar">
     <div class="avatar">
@@ -54,10 +54,11 @@
                     position: relative;
                 }
             </style>
-            <li class="node" data-bm="1">
+            <li class="node">
                 <style>
                     .node {
                         display: inline;
+                        margin-bottom: 5% !important;
                     }
                 </style>
                 <div class="select">
@@ -96,16 +97,95 @@
                                 opacity: 50%;
                                 background-color: rgba(240, 248, 255, 0.185);
                                 text-align: center;
+                                display: inline-block;
                             }
 
                             .ico {
                                 position: relative;
                                 top: 10%;
-                                right: 6%;
+                                left: 3%;
                             }
                         </style>
                     </div>
+                    <span class="text">
+                        时间线
+                        <style>
+                            span.text {
+                                color: #ffffffc7;
+                                position: relative;
+                                left: 6%;
+                                top: 7%;
+                            }
+                        </style>
+                    </span>
                 </div>
+                <div class="gap">
+                    <style>
+                        .gap {
+                            height: 10px;
+                        }
+                    </style>
+                </div>
+            </li>
+            <li class="node">
+                <div class="select">
+                    <style>
+                        .select {
+                            float: left;
+                            position: relative;
+                            width: 3px;
+                            height: 27px;
+                            background-color: rgb(0, 138, 103);
+                        }
+                    </style>
+                </div>
+                <div class="content">
+                    <style>
+                        div.content {
+                            position: relative;
+                            left: 26px;
+                            bottom: 1px;
+                            width: 150px;
+                            height: 30px;
+                            border-radius: 5px;
+                            box-shadow: 0.4px 0.4px 0.4px 0.4px rgba(255, 255, 255, 0.041);
+                        }
+                    </style>
+                    <div class="icon">
+                        <embed class="ico" src="image/novel.svg" type="image/svg+xml">
+                        <style>
+                            .icon {
+                                position: relative;
+                                top: 2.5px;
+                                width: 25px;
+                                height: 25px;
+                                border-radius: 50%;
+                                opacity: 50%;
+                                background-color: rgba(240, 248, 255, 0.185);
+                                text-align: center;
+                                display: inline-block;
+                            }
+
+                            .ico {
+                                position: relative;
+                                top: 10%;
+                                left: 3%;
+                            }
+                        </style>
+                    </div>
+                    <span class="text">
+                        小说
+                        <style>
+                            span.text {
+                                color: #ffffffc7;
+                                position: relative;
+                                left: 6%;
+                                top: 7%;
+                            }
+                        </style>
+                    </span>
+                </div>
+                <div class="gap"></div>
             </li>
         </ul>
     </div>
