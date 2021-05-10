@@ -1,194 +1,42 @@
 <!DOCTYPE html>
 <html>
-<style>
-    .sidebar {
-        width: 192px;
-        height: 96%;
-        background-color: #181A1B;
-        border-radius: 10px;
-        opacity: 0.85;
-        position: fixed;
-        margin-top: 1%;
-    }
-</style>
-<style>
-    @import url(css/global.css);
-</style>
-<div class="sidebar">
-    <div class="avatar">
-        <div class="avabg"></div>
-        <style>
-            .ava {
-                border-radius: 50%;
-                margin-top: -25%;
-                /* margin-left: 10%; */
-                transform: scale(.8);
-            }
-
-            .avatar {
-                text-align: center;
-            }
-
-            .avabg {
-                height: 140px;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                background-image: url(image/avabg.png);
-                background-position: -1020px -198px;
-            }
-        </style>
-        <img class="ava" src="image/avatar.png">
-    </div>
-    <div class="lis">
-        <style>
-            .lis {
-                /* background-color: black; */
-            }
-        </style>
-        <ul class="flist">
+    <style>
+        @import url(css/global.css);
+        @import url(css/sidebar.css);
+    </style>
+    <div class="sidebar">
+        <div class="avatar">
+            <div class="avabg"></div>
+            <img class="ava" src="image/avatar.png">
+        </div>
+        <div class="lis">
             <style>
-                .flist {
-                    right: 40px;
-                    width: fit-content;
-                    list-style: none;
-                    position: relative;
+                .lis {
+                    /* background-color: black; */
                 }
             </style>
-            <li class="node">
-                <style>
-                    .node {
-                        display: inline;
-                        margin-bottom: 5% !important;
-                    }
-                </style>
-                <div class="select">
-                    <style>
-                        .select {
-                            float: left;
-                            position: relative;
-                            width: 3px;
-                            height: 27px;
-                            background-color: rgb(0, 138, 103);
-                        }
-                    </style>
-                </div>
-                <div class="content">
-                    <style>
-                        div.content {
-                            /* background-color: aliceblue; */
-                            position: relative;
-                            left: 26px;
-                            bottom: 1px;
-                            width: 150px;
-                            height: 30px;
-                            border-radius: 5px;
-                            box-shadow: 0.4px 0.4px 0.4px 0.4px rgba(255, 255, 255, 0.041);
-                        }
-                    </style>
-                    <div class="icon">
-                        <embed class="ico" src="image/clock.svg" type="image/svg+xml">
-                        <style>
-                            .icon {
-                                position: relative;
-                                top: 2.5px;
-                                width: 25px;
-                                height: 25px;
-                                border-radius: 50%;
-                                opacity: 50%;
-                                background-color: rgba(240, 248, 255, 0.185);
-                                text-align: center;
-                                display: inline-block;
-                            }
-
-                            .ico {
-                                position: relative;
-                                top: 10%;
-                                left: 3%;
-                            }
-                        </style>
+            <ul class="flist">
+                <li class="node">
+                    <div class="select"></div>
+                    <div class="content">
+                        <div class="icon">
+                            <embed class="ico" src="image/clock.svg" type="image/svg+xml">
+                        </div>
+                        <span class="text">时间线</span>
                     </div>
-                    <span class="text">
-                        时间线
-                        <style>
-                            span.text {
-                                color: #ffffffc7;
-                                position: relative;
-                                left: 6%;
-                                top: 7%;
-                            }
-                        </style>
-                    </span>
-                </div>
-                <div class="gap">
-                    <style>
-                        .gap {
-                            height: 10px;
-                        }
-                    </style>
-                </div>
-            </li>
-            <li class="node">
-                <div class="select">
-                    <style>
-                        .select {
-                            float: left;
-                            position: relative;
-                            width: 3px;
-                            height: 27px;
-                            background-color: rgb(0, 138, 103);
-                        }
-                    </style>
-                </div>
-                <div class="content">
-                    <style>
-                        div.content {
-                            position: relative;
-                            left: 26px;
-                            bottom: 1px;
-                            width: 150px;
-                            height: 30px;
-                            border-radius: 5px;
-                            box-shadow: 0.4px 0.4px 0.4px 0.4px rgba(255, 255, 255, 0.041);
-                        }
-                    </style>
-                    <div class="icon">
-                        <embed class="ico" src="image/novel.svg" type="image/svg+xml">
-                        <style>
-                            .icon {
-                                position: relative;
-                                top: 2.5px;
-                                width: 25px;
-                                height: 25px;
-                                border-radius: 50%;
-                                opacity: 50%;
-                                background-color: rgba(240, 248, 255, 0.185);
-                                text-align: center;
-                                display: inline-block;
-                            }
-
-                            .ico {
-                                position: relative;
-                                top: 10%;
-                                left: 3%;
-                            }
-                        </style>
+                    <div class="gap"></div>
+                </li>
+                <li class="node">
+                    <div class="select"></div>
+                    <div class="content">
+                        <div class="icon">
+                            <embed class="ico" src="image/novel.svg" type="image/svg+xml">
+                        </div>
+                        <span class="text">小说</span>
                     </div>
-                    <span class="text">
-                        小说
-                        <style>
-                            span.text {
-                                color: #ffffffc7;
-                                position: relative;
-                                left: 6%;
-                                top: 7%;
-                            }
-                        </style>
-                    </span>
-                </div>
-                <div class="gap"></div>
-            </li>
-        </ul>
+                    <div class="gap"></div>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-
 </html>
