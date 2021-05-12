@@ -3,6 +3,9 @@
     <style>
         @import url(css/global.css);
         @import url(css/sidebar.css);
+        html{
+            display: inline-block;
+        }
         div.avabg {
             background-image: url(image/avabg.png);
         }
@@ -20,12 +23,14 @@
             </style>
             <ul class="flist">
                 <li class="node">
-                    <div class="select"></div>
-                    <div class="content">
-                        <div class="icon">
-                            <embed class="ico" src="image/clock.svg" type="image/svg+xml">
+                    <div class="cbg">
+                        <div class="select"></div>
+                        <div class="content">
+                            <div class="icon">
+                                <embed class="ico" src="image/clock.svg" type="image/svg+xml">
+                            </div>
+                            <span class="text">时间线</span>
                         </div>
-                        <span class="text">时间线</span>
                     </div>
                     <div class="gap"></div>
                 </li>
@@ -46,8 +51,8 @@
         <style>
             .list {
                 height: 10px;
-                float: right;
                 width: 10px;
+                background-color: black;
             }
         </style>
     </div>
